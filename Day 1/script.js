@@ -60,5 +60,72 @@ function findEvenNumbers(arr){
     return evenNumbers;
 }
 
-console.log(findEvenNumbers(arr))
+// console.log(findEvenNumbers(arr))
 
+
+//Q4: Write a JavaScript program to calculate the factorial of a given number. 
+
+function findFactorial(num){
+    if(num==0 || num==1){
+        return 1;
+    }else{
+        return num*findFactorial(num-1)
+    }
+}
+
+// console.log(findFactorial(5))
+
+// Q5 : Write a JavaScript function to check if a given number is prime. 
+
+function checkPrime(num){
+    if(num<=1){
+        return false;
+    }
+  
+    for(let i=2;i<=num/2;i++){
+        if(num%i === 0){
+           return false;
+        }
+    }
+    return true
+
+}
+// console.log(checkPrime(11))
+
+
+// Q6 : Write a JavaScript program to find the largest element in a nested array.  
+
+const nestedArray = [
+    [3,2,5],
+    [19,23,15],
+    [45,10,48]
+]
+
+function findLargestElement(nestedArray){
+    let largestNumber = nestedArray[0][0]
+    for(let array of nestedArray){
+        for(let number of array){
+            if(number > largestNumber){
+                largestNumber = number
+            }
+        }
+    }
+    return largestNumber
+}
+
+// console.log(findLargestElement(nestedArray))
+
+//Q7: Write a JavaScript program to convert a string to title case capitalize the first letter of each word.
+
+function toTitleCase(str) {
+    let words = str.split(' ');
+    let arr = [];
+    for (let word of words) {
+        let titleCase = word.charAt(0).toUpperCase() + word.slice(1);
+        arr.push(titleCase);
+    }
+    
+    return arr.join(' ');
+}
+
+console.log(toTitleCase("hello world this is javascript"));
