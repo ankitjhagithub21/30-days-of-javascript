@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2{
+  margin-top: 5px;
+}
+hr{
+    margin: 10px 0px;
+}
+li{
+    font-size: 20px;
+}
