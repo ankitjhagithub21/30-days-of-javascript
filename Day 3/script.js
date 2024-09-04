@@ -31,3 +31,4 @@ function getKeysAndValues(obj){
 }
 
 // console.log(getKeysAndValues({ name: "Alice", age: 25, city: "New York" }))
+
